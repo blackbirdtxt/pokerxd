@@ -1,15 +1,25 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #0b5135;
+  background-color: #0a3d2e;
   color: white;
+  font-family: Arial, sans-serif;
   text-align: center;
 }
 
 h1 {
-  margin-bottom: 10px;
+  margin: 15px 0;
 }
 
-.table, .players {
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player {
+  margin: 10px;
+}
+
+.community {
   margin: 20px;
 }
 
@@ -17,33 +27,37 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin: 10px;
 }
 
 .card {
   background: white;
   color: black;
-  padding: 10px 14px;
-  border-radius: 6px;
+  padding: 12px 16px;
+  border-radius: 8px;
   font-size: 18px;
   font-weight: bold;
 }
 
 .hidden .card {
-  background: #444;
-  color: #444;
+  background: #333;
+  color: #333;
 }
 
-.player {
-  display: inline-block;
-  width: 200px;
+.actions {
+  margin-top: 15px;
 }
 
 .actions button {
   margin: 5px;
-  padding: 10px 15px;
-  font-size: 14px;
+  padding: 10px 18px;
+  font-size: 15px;
   cursor: pointer;
+  border-radius: 6px;
+  border: none;
+}
+
+.actions button:hover {
+  background: #ddd;
 }
 
 #status {
