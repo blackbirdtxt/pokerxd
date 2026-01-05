@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Póker Texas Hold'em</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Texas Hold'em – Práctica</h1>
+
+<div class="table">
+  <h2>Mesa</h2>
+  <div id="community-cards" class="cards"></div>
+</div>
+
+<div class="players">
+  <div class="player">
+    <h3>Tú</h3>
+    <div id="player-cards" class="cards"></div>
+    <p>Fichas: <span id="player-chips">1000</span></p>
+  </div>
+
+  <div class="player">
+    <h3>CPU</h3>
+    <div id="cpu-cards" class="cards hidden"></div>
+    <p>Fichas: <span id="cpu-chips">1000</span></p>
+  </div>
+</div>
+
+<div class="actions">
+  <button onclick="check()">Check</button>
+  <button onclick="bet()">Apostar 50</button>
+  <button onclick="fold()">Retirarse</button>
+  <button onclick="newHand()">Nueva mano</button>
+</div>
+
+<p id="status"></p>
+
+<script src="game.js"></script>
+</body>
+</html>

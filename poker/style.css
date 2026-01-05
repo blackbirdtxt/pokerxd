@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b5135;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.table, .players {
+  margin: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.card {
+  background: white;
+  color: black;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hidden .card {
+  background: #444;
+  color: #444;
+}
+
+.player {
+  display: inline-block;
+  width: 200px;
+}
+
+.actions button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#status {
+  margin-top: 15px;
+  font-weight: bold;
+}
